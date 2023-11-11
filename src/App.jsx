@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
       
-        <a href="https://react.dev" target="_blank">
+        <a>
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
@@ -21,11 +21,11 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+           
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        All Rights Reserved Carlos Cano & Richard Aguirre
       </p>
     </>
   )
