@@ -21,7 +21,7 @@ function App() {
           count is {count}
         </button>
         <p>
-           
+        Bienvenido a nuestro encantador rincón floral, donde la naturaleza se encuentra con la elegancia. En nuestra página, descubrirás un exquisito catálogo de flores y arreglos que capturan la belleza efímera de la flora. Desde cautivadores ramos hasta arreglos florales personalizados, cada pétalo cuenta una historia única. 
         </p>
       </div>
       <p className="read-the-docs">
