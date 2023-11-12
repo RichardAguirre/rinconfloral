@@ -20,14 +20,14 @@ function App() {
       <h1>TIENDA DE FLORES</h1>
       <h3>Todo en Flores y plantas</h3>
 
-         <img className='imagen1' src={plantas} alt="plantas.png" />
-         <img className='imagen2'src={flores} alt="flores.png" />
-         <img className='imagen3'src={bonsai} alt="bonsai.png" />
+         <button ><img className='imagen1' src={plantas} alt="plantas.png" /></button>
+         <button><img className='imagen2'src={flores} alt="flores.png" /></button>
+         <button><img className='imagen3'src={bonsai} alt="bonsai.png" /></button>
          
       
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          COMPRAR {count}
+          INICIO {count}
         </button>
         <p>
         Bienvenido a nuestro encantador rincón floral, donde la naturaleza se encuentra con la elegancia. En nuestra página, descubrirás un exquisito catálogo de flores y arreglos que capturan la belleza efímera de la flora.Desde cautivadores ramos hasta arreglos florales personalizados, cada pétalo cuenta una historia única. 
