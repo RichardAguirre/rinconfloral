@@ -49,3 +49,19 @@
   margin-right: 20px;
 }
 
+.categorias-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.categoria {
+  text-align: center;
+}
+
+.icono-compra {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
