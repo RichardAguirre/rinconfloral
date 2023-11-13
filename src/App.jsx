@@ -8,11 +8,13 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [plantasCount, setPlantasCount] = useState(0)
+  const [floresCount, setFloresCount] = useState(0)
+  const [bonsaiCount, setBonsaiCount] = useState(0)
 
   return (
     <>
       <div>
-      
         <a>
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
@@ -20,17 +22,33 @@ function App() {
       <h1>TIENDA DE FLORES</h1>
       <h3>Todo en Flores y plantas</h3>
 
-         <button ><img className='imagen1' src={plantas} alt="plantas.png" /></button>
-         <button><img className='imagen2'src={flores} alt="flores.png" /></button>
-         <button><img className='imagen3'src={bonsai} alt="bonsai.png" /></button>
-         
+      <div>
+         <button onClick={() => setPlantasCount(plantasCount + 1)}>
+           <img className='imagen1' src={plantas} alt="plantas.png" />
+         </button>
+         <p>Plantas Agregados: {plantasCount}</p>
+      </div>
+
+      <div>
+         <button onClick={() => setFloresCount(floresCount + 1)}>
+           <img className='imagen2' src={flores} alt="flores.png" />
+         </button>
+         <p>Flores Agregados: {floresCount}</p>
+      </div>
+
+      <div>
+         <button onClick={() => setBonsaiCount(bonsaiCount + 1)}>
+           <img className='imagen3' src={bonsai} alt="bonsai.png" />
+         </button>
+         <p>Bonsáis Agregados: {bonsaiCount}</p>
+      </div>
       
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount(count + 1)}>
           INICIO {count}
         </button>
         <p>
-        Bienvenido a nuestro encantador rincón floral, donde la naturaleza se encuentra con la elegancia. En nuestra página, descubrirás un exquisito catálogo de flores y arreglos que capturan la belleza efímera de la flora.Desde cautivadores ramos hasta arreglos florales personalizados, cada pétalo cuenta una historia única. 
+        Bienvenido a nuestro encantador rincón floral, donde la naturaleza se encuentra con la elegancia...
         </p>
       </div>
       <p className="read-the-docs">
