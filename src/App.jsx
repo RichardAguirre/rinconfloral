@@ -5,15 +5,30 @@ import flores from "./assets/flores.png";
 import bonsai from "./assets/bonsai.png";
 
 import "./App.css";
+import React from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [plantasCount, setPlantasCount] = useState(0);
   const [floresCount, setFloresCount] = useState(0);
   const [bonsaiCount, setBonsaiCount] = useState(0);
+  const [carritoCount, setCarritoCount] = useState(0);
+
+  const agregarAlCarrito = (categoria) => {
+    if (categoria === "plantas") {
+      setPlantasCount(plantasCount + 1);
+    } else if (categoria === "flores") {
+      setFloresCount(floresCount + 1);
+    } else if (categoria === "bonsai") {
+      setBonsaiCount(bonsaiCount + 1);
+    }
+    setCarritoCount(carritoCount + 1);
+  };
 
   return (
     <>
+      <div className="carrito">
+        <span>🛒 Carrito: {carritoCount}</span>
+      </div>
       <div>
         <a>
           <img src={reactLogo} className="logo react" alt="React logo" />
@@ -72,7 +87,6 @@ function App() {
       </div>
 
       <div className="card">
-        <button onClick={() => setCount(count + 1)}>INICIO {count}</button>
         <p>
           Bienvenido a nuestro encantador rincón floral, donde la naturaleza se
           encuentra con la elegancia...
