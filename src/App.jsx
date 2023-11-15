@@ -24,10 +24,18 @@ function App() {
     setCarritoCount(carritoCount + 1);
   };
 
+  const restablecerContadores = () => {
+    setPlantasCount(0);
+    setFloresCount(0);
+    setBonsaiCount(0);
+    setCarritoCount(0);
+  };
+
   return (
     <>
       <div className="carrito">
         <span>🛒 Carrito: {carritoCount}</span>
+        <button onClick={restablecerContadores}>Restablecer</button>
       </div>
       <div>
         <a>
@@ -42,27 +50,21 @@ function App() {
           <button onClick={() => agregarAlCarrito("plantas")}>
             <img className="imagen1" src={plantas} alt="plantas" />
           </button>
-          <p>
-            Plantas agregadas: {plantasCount}
-          </p>
+          <p>Plantas agregadas: {plantasCount}</p>
         </div>
 
         <div className="categoria">
           <button onClick={() => agregarAlCarrito("flores")}>
             <img className="imagen2" src={flores} alt="flores" />
           </button>
-          <p>
-            Flores agregadas: {floresCount}
-          </p>
+          <p>Flores agregadas: {floresCount}</p>
         </div>
 
         <div className="categoria">
           <button onClick={() => agregarAlCarrito("bonsai")}>
             <img className="imagen3" src={bonsai} alt="bonsai" />
           </button>
-          <p>
-            Bonsáis agregados: {bonsaiCount}
-          </p>
+          <p>Bonsáis agregados: {bonsaiCount}</p>
         </div>
       </div>
 
