@@ -39,48 +39,28 @@ function App() {
 
       <div className="categorias-container">
         <div className="categoria">
-          <button onClick={() => setPlantasCount(plantasCount + 1)}>
+          <button onClick={() => agregarAlCarrito("plantas")}>
             <img className="imagen1" src={plantas} alt="plantas" />
           </button>
-
           <p>
-            <button
-              onClick={() => setPlantasCount(plantasCount + 1)}
-              className="icono-compra"
-            >
-              🛒
-            </button>
             Plantas agregadas: {plantasCount}
           </p>
         </div>
 
         <div className="categoria">
-          <button onClick={() => setFloresCount(floresCount + 1)}>
+          <button onClick={() => agregarAlCarrito("flores")}>
             <img className="imagen2" src={flores} alt="flores" />
           </button>
-
           <p>
-            <button
-              onClick={() => setFloresCount(floresCount + 1)}
-              className="icono-compra"
-            >
-              🛒
-            </button>
             Flores agregadas: {floresCount}
           </p>
         </div>
 
         <div className="categoria">
-          <button onClick={() => setBonsaiCount(bonsaiCount + 1)}>
+          <button onClick={() => agregarAlCarrito("bonsai")}>
             <img className="imagen3" src={bonsai} alt="bonsai" />
           </button>
           <p>
-            <button
-              onClick={() => setBonsaiCount(bonsaiCount + 1)}
-              className="icono-compra"
-            >
-              🛒
-            </button>
             Bonsáis agregados: {bonsaiCount}
           </p>
         </div>
