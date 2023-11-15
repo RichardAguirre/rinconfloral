@@ -65,3 +65,16 @@
   font-size: 1.5em;
 }
 
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.carrito,
+.restablecer {
+  padding: 5px;
+  margin: 5px; 
+}
+

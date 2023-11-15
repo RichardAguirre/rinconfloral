@@ -33,9 +33,13 @@ function App() {
 
   return (
     <>
-      <div className="carrito">
-        <span>🛒 Carrito: {carritoCount}</span>
-        <button onClick={restablecerContadores}>Restablecer</button>
+      <div className="header">
+        <div className="restablecer">
+          <button onClick={restablecerContadores}>Restablecer</button>
+        </div>
+        <div className="carrito">
+          <span>🛒 Carrito: {carritoCount}</span>
+        </div>
       </div>
       <div>
         <a>
