@@ -1,87 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/logo.png";
-import plantas from "./assets/plantas.png";
-import flores from "./assets/flores.png";
-import bonsai from "./assets/bonsai.png";
-
-import "./App.css";
-import React from "react";
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react';
+// local components
+import Nav from './components/Nav';
+import Home from './pages/Home';
 
 function App() {
-  const [plantasCount, setPlantasCount] = useState(0);
-  const [floresCount, setFloresCount] = useState(0);
-  const [bonsaiCount, setBonsaiCount] = useState(0);
-  const [carritoCount, setCarritoCount] = useState(0);
-
-  const agregarAlCarrito = (categoria) => {
-    if (categoria === "plantas") {
-      setPlantasCount(plantasCount + 1);
-    } else if (categoria === "flores") {
-      setFloresCount(floresCount + 1);
-    } else if (categoria === "bonsai") {
-      setBonsaiCount(bonsaiCount + 1);
-    }
-    setCarritoCount(carritoCount + 1);
-  };
-
-  const restablecerContadores = () => {
-    setPlantasCount(0);
-    setFloresCount(0);
-    setBonsaiCount(0);
-    setCarritoCount(0);
-  };
-
   return (
-    <>
-      <div className="header">
-        <div className="restablecer">
-          <button onClick={restablecerContadores}>Restablecer</button>
-        </div>
-        <div className="carrito">
-          <span>🛒 Carrito: {carritoCount}</span>
-        </div>
-      </div>
-      <div>
-        <a>
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>TIENDA DE FLORES</h1>
-      <h3>Todo en Flores y plantas</h3>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-      <div className="categorias-container">
-        <div className="categoria">
-          <button onClick={() => agregarAlCarrito("plantas")}>
-            <img className="imagen1" src={plantas} alt="plantas" />
-          </button>
-          <p>Plantas agregadas: {plantasCount}</p>
-        </div>
-
-        <div className="categoria">
-          <button onClick={() => agregarAlCarrito("flores")}>
-            <img className="imagen2" src={flores} alt="flores" />
-          </button>
-          <p>Flores agregadas: {floresCount}</p>
-        </div>
-
-        <div className="categoria">
-          <button onClick={() => agregarAlCarrito("bonsai")}>
-            <img className="imagen3" src={bonsai} alt="bonsai" />
-          </button>
-          <p>Bonsáis agregados: {bonsaiCount}</p>
-        </div>
+        </Routes>
       </div>
-
-      <div className="card">
-        <p>
-          Bienvenido a nuestro encantador rincón floral, donde la naturaleza se
-          encuentra con la elegancia...
-        </p>
-      </div>
-      <p className="read-the-docs">
-        All Rights Reserved Carlos Cano & Richard Aguirre
-      </p>
-    </>
+    </BrowserRouter>
   );
 }
 
