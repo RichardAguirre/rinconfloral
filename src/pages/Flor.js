@@ -1,6 +1,6 @@
 import SideHeadline from "../Components/SideHeadline";
 import Article from "../Components/Article";
-import Bowl from "../assets/Schuesseln.png"
+import Bowl from "../assets/Flor.png"
 import Footer from "../Components/Footer";
 
 const Flor = () => {
