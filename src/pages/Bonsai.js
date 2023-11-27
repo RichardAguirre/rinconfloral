@@ -1,7 +1,7 @@
 import SideHeadline from "../Components/SideHeadline";
 import Article from "../Components/Article";
 import Footer from "../Components/Footer";
-import Chair from "../img/Stuhl.png"
+import Chair from "../assets/Stuhl.png"
 
 const Bonsai = () => {
     document.querySelector("body").style.background = "";

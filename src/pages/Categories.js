@@ -5,9 +5,9 @@ import "./Categories.css"
 import { Link } from "react-router-dom";
 
 // IMAGES
-import Desk from "../img/Tisch.png"
-import Chair from "../img/Stuhl.png"
-import Bowl from "../img/Schuesseln.png"
+import Desk from "../assets/Tisch.png"
+import Chair from "../assets/Stuhl.png"
+import Bowl from "../assets/Schuesseln.png"
 
 // COMPONENTS
 import SideHeadline from "../Components/SideHeadline";

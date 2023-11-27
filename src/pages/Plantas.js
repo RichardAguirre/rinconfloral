@@ -1,6 +1,6 @@
 import SideHeadline from "../Components/SideHeadline";
 import Article from "../Components/Article";
-import Table from "../img/Tisch.png"
+import Table from "../assets/Tisch.png"
 import Footer from "../Components/Footer";
 
 const Plantas = () => {
