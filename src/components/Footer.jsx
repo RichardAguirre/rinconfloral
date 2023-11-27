@@ -1,4 +1,5 @@
 import React from "react";
+//------- Local--------
 import Logo from "../assets/Logo.png"
 import "./Footer.css"
 

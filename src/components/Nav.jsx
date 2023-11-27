@@ -1,7 +1,8 @@
-import "./Nav.css";
-import { NavLink } from "react-router-dom";
-import Logo from "../assets/Logo.png";
 import React from "react";
+import { NavLink } from "react-router-dom";
+//------- Local--------
+import "./Nav.css";
+import Logo from "../Assets/Logo.png";
 
 const Nav = () => {
   return (

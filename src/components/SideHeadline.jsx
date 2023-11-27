@@ -1,6 +1,7 @@
+import React from "react";
+//------- Local--------
 import "./SideHeadline.css"
 import Flower from "../assets/Flower.png"
-import React from "react";
 
 const SideHeadline = (props) => {
     return ( 

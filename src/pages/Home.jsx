@@ -1,7 +1,8 @@
 import React from "react";
-import HomeImg from "../assets/Home.png"
-import "./Home.css"
 import { Link } from "react-router-dom";
+//------- Local--------
+import "./Home.css"
+import HomeImg from "../Assets/Home.png"
 
 const Home = () => {
     document.querySelector("body").style.background = "linear-gradient(90deg, #FFFFFF 70%, #d6c290 30%)";

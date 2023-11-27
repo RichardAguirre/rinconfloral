@@ -3,6 +3,11 @@ import './App.css';
 
 // PACKAGES
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react';
+//------- Local--------
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import About from './pages/About';
 
 // PAGES
 import Nav from './Components/Nav';

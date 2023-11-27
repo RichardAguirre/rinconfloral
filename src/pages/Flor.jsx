@@ -1,7 +1,9 @@
+import React from "react";
+//------- Local--------
 import SideHeadline from "../Components/SideHeadline";
 import Article from "../Components/Article";
-import Bowl from "../assets/Flor.png"
 import Footer from "../Components/Footer";
+import Bowl from "../Assets/Flor.png"
 
 const Flor = () => {
     document.querySelector("body").style.background = "";

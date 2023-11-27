@@ -1,4 +1,5 @@
 import "./Article.css"
+import React from "react";
 
 const Article = (props) => {
     return ( 

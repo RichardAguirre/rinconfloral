@@ -1,15 +1,10 @@
-// CSS
-import "./Categories.css"
-
-// PACKAGE
 import { Link } from "react-router-dom";
-
-// IMAGES
-import Desk from "../assets/Planta.png"
-import Chair from "../assets/Bonsai.png"
-import Bowl from "../assets/Flor.png"
-
-// COMPONENTS
+import React from "react";
+//------- Local--------
+import "./Categories.css"
+import Desk from "../Assets/Planta.png"
+import Chair from "../Assets/Bonsai.png"
+import Bowl from "../Assets/Flor.png"
 import SideHeadline from "../Components/SideHeadline";
 import Footer from "../Components/Footer";
 

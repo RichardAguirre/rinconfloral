@@ -1,16 +1,18 @@
+import React from "react";
+//------- Local--------
 import SideHeadline from "../Components/SideHeadline";
 import Article from "../Components/Article";
-import Table from "../assets/Planta.png"
 import Footer from "../Components/Footer";
+import Chair from "../Assets/Bonsai.png"
 
-const Plantas = () => {
+const Bonsai = () => {
     document.querySelector("body").style.background = "";
     return ( 
         <div>
             <main>
                 <section className="">
-                    <SideHeadline headline="Plantas" categorie="Productos"/>
-                    <Article image={Table} description="Tenemos diferentes tipos de plantas decorativas para que mejores y des vida a tus espacios" />
+                    <SideHeadline headline="Bonsai" categorie="Productos"/>
+                    <Article image={Chair} description="Diferentes tipos de bonsai, puedes dar un estilo oriental a tus espacios" />
                 </section>
             </main>
             <Footer />
@@ -18,4 +20,4 @@ const Plantas = () => {
      );
 }
  
-export default Plantas;
+export default Bonsai;
