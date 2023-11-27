@@ -8,11 +8,6 @@ import React from 'react';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import About from './pages/About';
-
-// PAGES
-import Nav from './Components/Nav';
-import About from './Pages/About';
-import Home from './Pages/Home';
 import Bonsai from './Pages/Bonsai';
 import Flor from './Pages/Flor';
 import Plantas from './Pages/Plantas';
