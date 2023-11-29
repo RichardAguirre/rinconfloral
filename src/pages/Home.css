@@ -44,3 +44,33 @@
     margin-top: 5px;
   }
   
+  .home-side {
+    position: relative;
+  }
+  
+  .load-image-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .load-image-button:hover {
+    background-color: #45a049;
+  }
+  
+  .content-section {
+    margin-top: 50px; /* Ajustar según sea necesario */
+  }
+  
+  .image-container img {
+    width: 300px;
+    height: 370px;
+    object-fit: cover;
+  }
+  

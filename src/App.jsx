@@ -1,7 +1,4 @@
-// CSS
 import './App.css';
-
-// PACKAGES
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 //------- Local--------
