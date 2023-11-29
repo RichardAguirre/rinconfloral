@@ -23,3 +23,24 @@
     margin-bottom: 17px;
     color: #313235;
 }
+
+.home-side .content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .home-side .image-container {
+    text-align: right;
+  }
+  
+  .home-side .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .home-side .image-caption {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  
